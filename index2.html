@@ -6,15 +6,29 @@
 <script src="script2.js"></script>
 </head>
 <body>
-
-<div id="aufgabe" class="header">
-    <h2>To Do List</h2>
-    <input type="text" id="newinput" placeholder="enter the aufgabe">
-    <span onclick="newtodo()" class="addBtn">Add</span>
+<div class="container">
+    <p>
+        <label for="new-aufgabe"></label>
+        <input id="new-aufgabe" type="tex">
+        <button>add</button>
+    </p>
+    <h2>Meine Aufgabe</h2>
+    <ul id="nichtErledig">
+        <li><input type="checkbox"><label>zimmer putzen</label></li>
+        <input type="text">
+        <button class="update">update</button>
+        <button class="loschen">löschen</button>
+        <li class="toupdsate"><input type="checkbox"><label>lernen</label><input>
+    </ul>
+    <h2> Aufgabe schon erledigt</h2>
+    <ul id="erledigt">
+        <li>
+            <input type="checkbox" checked>
+            <label>kochen</label><input type="text"><button class="update">update</button><button class="loschen">löschen</button></li>
+        </li>
+    </ul>
 </div>
 
-<ul id="myUL">
 
-</ul>
 </body>
 </html>
